@@ -18,26 +18,28 @@ Data Engineer | Azure & AWS | Python | Spark | Kafka | Airflow
 
 ## 📂 Project Structure
 
-real-time-fraud-detection-pipeline/
-│
-├── fraud_detector.py # Core fraud logic
-├── sample_transactions.csv # Sample transaction data
-├── requirements.txt # Dependencies
-└── README.md # Project info
 
 
-## 🚀 How to Run
+## 🚀 How to Run the Project
 
-1. Install dependencies:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yaswanthnissankara99/real-time-fraud-detection-pipeline.git
+   cd real-time-fraud-detection-pipeline
+
+
+2. Install dependencies:
 
    pip install -r requirements.txt
 
 
-2. Run the script:
+3. Run the script:
 
 
 python fraud_detector.py
 
 Output:
 
-Filtered transactions suspected of fraud will be printed to the console.
+Displays suspicious transactions based on simple fraud logic.
+
+Helps understand how real-time flagging might work in large pipelines.
