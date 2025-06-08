@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+  - name: public
+    schema: public
+    tables:
+      - name: claims
+
+models:
+  - name: stg_claims
+    description: "Staging model for healthcare claims"
+    columns:
+      - name: claim_id
+        description: "Unique ID of the claim"
+        tests: 
+              - not_null
+              - unique
+      - name: patient_id
+        description: "Patient ID"
+        tests: 
+              - not_null
+      - name: procedure_code
+        description: "Procedure code"
+      - name: amount
+        description: "Total billed amount"
+      - name: claim_date
+        description: "Date of claim"
